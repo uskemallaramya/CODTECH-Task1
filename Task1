@@ -1,0 +1,38 @@
+# Simple calculator program in Python
+
+# Function to perform the calculation
+def calculator():
+    # Getting two numbers from the user
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    # Asking the user to choose an operation
+    print("Select an operation:")
+    print("1: Add")
+    print("2: Subtract")
+    print("3: Multiply")
+    print("4: Divide")
+    
+    operation = input("Enter the operation (1/2/3/4): ")
+
+    # Performing the calculation based on the chosen operation
+    if operation == '1':
+        print(f"Result: {num1 + num2}")
+    elif operation == '2':
+        print(f"Result: {num1 - num2}")
+    elif operation == '3':
+        print(f"Result: {num1 * num2}")
+    elif operation == '4':
+        if num2 != 0:
+            print(f"Result: {num1 / num2}")
+        else:
+            print("Error: Division by zero is not allowed.")
+    else:
+        print("Invalid operation selected.")
+# 1 as add
+# 2 as sub
+# 3 as mut
+# 4 as div
+
+# Running the calculator function
+calculator()
